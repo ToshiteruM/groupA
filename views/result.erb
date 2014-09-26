@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="well well-lg">
+			<h1><%= @keyword %>のランキングTOP <%= @disp_num %></h1>
+		</div>
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-5  col-md-offset-1">
+				    <table class="table table-hover table-bordered">
+				      <tr>
+				        <th>商品名</th>
+				        <th>値段</th>
+				      </tr>
+				      <% @items.first(@disp_num).each do |item| %>            
+				      <tr>            
+				        <td><%= item.name %></td>
+				        <td><%= item.price %></td>
+				      </tr>
+				      <% end %>                    
+				    </table>
+				</div> 
+				<div class="col-md-5">
+					<table class="table table-hover table-bordered">
+				      <tr>
+				        <th>商品名</th>
+				        <th>値段</th>
+				      </tr>
+				      <% @disp_num.times do %>            
+				      <tr>            
+				        <td>aaaa</td>
+				        <td>1111</td>
+				      </tr>
+				      <% end %>                    
+				    </table>
+				<div>         
+			</div>
+		</div>
+	</body>
+</html>
