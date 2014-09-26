@@ -1,0 +1,10 @@
+language: ruby
+rvm:
+- 2.1.2
+deploy:
+  provider: heroku
+  api_key:
+    secure: X6wt1Xu8c7JJDeGKdJ8oqhEn6XIbkkdFkOQ0CJUktSKVjNGSlfFpzpkkeI5JMWbgG8ZkW+mWariOGB7haqJz9DCoD7kdqmyplNu3LPQYIG4v7ndVjainzrWrX6YvtjhITeA5Orb7dkbD14IZt7fg/9jdARLwoYg3zKdomFDQYC0=
+  app: quiet-springs-5501
+  on:
+    repo: ToshiteruM/groupA
